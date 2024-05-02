@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    .box {
+      display: flex;
+      height: 100vh;/* vh=viewport height*/
+       }
+       
+    .background {
+      width: 50%;
+      background: linear-gradient(210deg,#a4a1d2,#e4bca6);
+    }
+    @media only screen and (max-width: 600px) 
+    {
+      .background{
+        background: none;
+      }
+      .whitebox{
+        position: absolute;
+        right:100px;
+        top:100px;
+        left: 100px;
+       }
+       .login-form{
+        min-width: 350px;
+        padding: 20px 10px;
+       }
+       .login-form input[type="email"],
+       .login-form input[type="password"]
+       {
+        min-width:250px;
+        height:8px;
+       }
+      .login-form button{
+        min-width: 370px;
+      }              
+    }
+    
+    .whitebox {
+      width: 50%;
+      padding:20px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .login-form {
+      width: 900px;
+      padding: 20px 40px;
+      background: white;
+    }
+    
+    .login-form h2 {
+          color: #CC5500;
+          font-size: 30px;
+          margin-bottom: 20px;
+    }
+    
+    .login-form input[type="email"],
+    .login-form input[type="password"] {
+      width: 100%;
+      height: 8px;
+      padding: 12px;
+      margin-bottom: 10px;
+      
+    }
+    
+    .login-form button {
+      width: 103%;
+      padding: 10px;
+      background: #CC5500;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .login-form label.three{
+            font-size: 13px;
+            line-height: 1.8;
+    }
+    .login-form label.four{
+          font-size: 13px;
+          line-height: 1.8;
+        }
+
+    .login-form label.five{
+                font-size: 13px; 
+                line-height: 1.8;
+        }
+              
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="background"></div>
+    <div class="whitebox">
+      <div class="login-form">
+        <h2>Login Form</h2>
+        <form action="" method="POST">
+        <label for="Email" class="four"><b>Email:</b></label><br>
+        <input type="email" name="Email" required>
+        <label for="Password"class="three"><b>Password:</b></label><br>
+        <input type="password" name="Password" required>
+        <input type="checkbox" name="remember"required> 
+        <label for="remember" class="five">Remember me</label><br> 
+        <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
